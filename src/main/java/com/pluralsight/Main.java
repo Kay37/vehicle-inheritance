@@ -7,39 +7,23 @@ public class Main {
         // -----------------------------------------------------
         //                    Car(s)
         // -----------------------------------------------------
-        Vehicle hondaAccord = new Car();
-        hondaAccord.setBrand("Honda");
-        hondaAccord.setName("Honda Accord LX 4-Cyl");
-        hondaAccord.setColor("Desert Mist");
-        hondaAccord.setDriver("Kimball");
-        hondaAccord.setFuelCapacity(17.1);
+        Vehicle hondaAccord = new Car("Honda Accord LX 4-Cyl", "Honda", "Desert Mist", 5,
+                17.1, 16.7, 125, "Kimball", "VIN-0002");
         // -----------------------------------------------------
         //                    Hovercraft(s)
         // -----------------------------------------------------
-        Vehicle hovercraft = new Hovercraft();
-        hovercraft.setBrand("Griffon Hoverwork");
-        hovercraft.setName("Griffon Hoverwork 8000td");
-        hovercraft.setColor("Silver");
-        hovercraft.setDriver("Some dude");
-        hovercraft.setFuelCapacity(528);
+        Vehicle hovercraft = new Hovercraft("Griffon Hoverwork 8000td", "Griffon Hoverwork", "Silver", 100,
+                528, 8000, 50, "Some dude", "VIN-0003");
         // -----------------------------------------------------
         //                    Moped(s)
         // -----------------------------------------------------
-        Vehicle chickMagnet = new Moped();
-        chickMagnet.setBrand("Puch");
-        chickMagnet.setName("Puch Newport");
-        chickMagnet.setColor("Yellow");
-        chickMagnet.setDriver("Peter Parker");
-        chickMagnet.setFuelCapacity(.85);
+        Vehicle chickMagnet = new Moped("Puch Newport", "Puch", "Yellow", 1,
+                0.85, 0, 30, "Peter Parker", "VIN-0001");
         // -----------------------------------------------------
         //                    SemiTruck(s)
         // -----------------------------------------------------
-        Vehicle optimusPrime = new SemiTruck();
-        optimusPrime.setBrand("Freightliner");
-        optimusPrime.setName("Freightliner FL86");
-        optimusPrime.setColor("Red");
-        optimusPrime.setDriver("Optimus");
-        optimusPrime.setFuelCapacity(100);
+        Vehicle optimusPrime = new SemiTruck("Freightliner FL86", "Freightliner", "Red", 2,
+                100, 40000, 75, "Optimus", "VIN-0004");
 
         //* Display vehicle information:
         boolean displayInfo = InputToolbox.promptYesNo(

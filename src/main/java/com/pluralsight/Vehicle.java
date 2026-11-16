@@ -16,6 +16,18 @@ private boolean isHeadlightOn;
 private String driver;
 private String vin;
 
+    public Vehicle(String name, String brand, String color, int numberOfPassengers, double fuelCapacity, double cargoCapacity, double maxSpeed, String driver, String vin) {
+        this.name = name;
+        this.brand = brand;
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.fuelCapacity = fuelCapacity;
+        this.cargoCapacity = cargoCapacity;
+        this.maxSpeed = maxSpeed;
+        this.driver = driver;
+        this.vin = vin;
+    }
+
     public String getName() {
         return name;
     }
